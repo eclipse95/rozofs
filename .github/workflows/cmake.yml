@@ -22,7 +22,7 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: Install deps
-      run: apt-get update -q && apt-get install --no-install-recommends gcc make libfuse-dev libattr1-dev uuid-dev libconfig-dev libreadline-dev pyro python-yaml libpthread libcrypt rpcbind swig libnuma-dev -yq
+      run: sudo apt-get update -q && sudo apt-get install --no-install-recommends gcc make libfuse-dev libattr1-dev uuid-dev libconfig-dev libreadline-dev pyro python-yaml libpthread libcrypt rpcbind swig libnuma-dev -yq
 
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
